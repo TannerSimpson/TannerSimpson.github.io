@@ -31,16 +31,24 @@ body {
 
 /* Typography (font)*/
 
-h1 {
-    color:black;
+h1, h2, p{
+    color:#0c8297;
     text-align: center;
 }
 
 #main-header, #main-content, #main-footer {
+    background-color: rgb(109, 57, 9);
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+#main-subcontent {
     background-color: white;
     padding: 5px;
     border-radius: 5px;
     margin-bottom: 10px;
+    text-align:center;
 }
 
 /*for larger resolutions*/
@@ -75,4 +83,5 @@ h1 {
     #main-nav li:hover {
         border-bottom: 2px solid #BF7839;
     }
+
 }
