@@ -1,0 +1,36 @@
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    background: url(images/Unknown.jpeg);
+}
+
+/* Structure */
+#content {
+    background:#fff;
+    padding: 5px;
+    width: 80%;
+    margin: auto; /* center horizontally */
+    border-radius: 5px;
+} 
+
+/* Havigation*/
+#main-nav a {
+    text-decoration: none; /*removes underline*/
+    color:lightsalmon;
+    background:black;
+    padding: 5px;
+    border-radius: 2px;
+}
+
+#main-nav a:hover{
+    background:lightsalmon;
+    color:black;
+}
+
+/* Typography (font)*/
+h1 {
+    color:sienna;
+}
+
+.special{
+    color:lightcoral;
+}

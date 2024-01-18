@@ -1,0 +1,19 @@
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    background:lightgray;
+}
+
+/* Structure */
+#content {
+    background:#fff;
+    padding: 5px;
+    width: 80%;
+    margin: auto; /* center horizontally */
+    border-radius: 5px;
+} 
+
+/* Typography (font)*/
+
+h1 {
+    color:darkgray;
+}

@@ -2,18 +2,50 @@
 <html>
     <head>
         <title>CSCE242 Home Page</title>
+        <link rel="stylesheet" href="styles.css">
     </head>
 
     <body>
-        <h1>CSCE 242: Website Applications</h1>
-        <h2>Tanner Simpson</h2>
+        <div id="content">
+            <header id="main-header">
+                <h1>CSCE 242: Website Applications</h1>
+                <h2>Tanner Simpson</h2>
+            
+                <p>CSCE 242 is a class that students how to utilize HTML, CSS, and JavaScript to design and add functionality to their webstie.</p> 
+                
+            </header>
 
-        <p>CSCE 242 is a class that students how to utilize HTML, CSS, and JavaScript to design and add functionality to their webstie.</p> 
+            <main id="main-content">
+                <div id="Assignments">
+                        <h3>Assignments</h3> 
+                </div>
+            
+                <ul class="columns">
+                    <nav id="main-nav">
 
-        <h3>Assignments</h3>
-        <ul><!--unordered list (ol for ordered list)-->
-            <li><a href= "https://TannerSimpson.github.io/csce242/assignments/assignment1/index.html">Assignment 1</a></li>
-        </ul>
+                        <section class="one">
+                            <h3>First Assignment</h3>
+                            <p>
+                                <li><a href= "https://TannerSimpson.github.io/csce242/assignments/assignment1/index.html">Assignment 1</a></li>
+                            </p>
+                        </section>
+                        <section class="one">
+                            <h3>Second Assignment</h3>
+                            <p>
+                                <li><a href= "https://TannerSimpson.github.io/csce242/assignments/assignment2/index.html">Assignment 2</a></li>
+                            </p>
+                        </section>
+                    </nav>
+
+                </ul>
+
+            </main>
+
+            <footer id="main-footer">
+                <p> &copy; TannerSimpson</p>
+            </footer>
+
+        </div>  
 
     </body>
 </html>
