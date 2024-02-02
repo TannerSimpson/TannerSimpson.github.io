@@ -25,7 +25,7 @@ const addStars = () => {
 
     // Create a new star image element
     const star = document.createElement("img");
-    star.src = "images/starimage.png"; // Change this to the actual path of your star image
+    star.src = "images/starimage.png";
     star.alt = "Star";
     star.classList.add("star");
 
