@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="notesSimple.css">
+    <title>NotesSimple</title>
+</head>
+<body>
+    <header>
+        <h1>NotesSimple</h1>
+    </header>
+
+    <nav class="toggle-bar">
+        <a href="index.html"><button>Home</button></a>
+        <a href="notesSimple.html"><button>NotesSimple</button></a>
+        <a href="notesSimplePlus.html"><button>NotesSimple+</button></a>
+        <a href="account.html"><button>Account</button></a>
+        <a href="more.html"><button>More</button></a>
+    </nav>
+
+    <section class="recording-section">
+        <button id="startRecordingBtn">Begin Recording</button>
+        <input type="text" id="infoTextBox" placeholder="Press the button to reveal information" readonly>
+        <p id="Lecture is now being recorded. "></p>
+    </section>
+
+    <section class="action-buttons">
+        <button id="saveTextFileBtn">Save Text File</button>
+        <button id="createNotesBtn">Create Notes</button>
+        <button id="saveVoiceRecordingBtn">Save Voice Recording</button>
+        <button id="highlightKeyPointsBtn">Highlight Key Points</button>
+        <textarea id="notesTextArea" placeholder="Notes will be displayed here. " readonly></textarea>
+    </section>
+
+</body>
+</html>

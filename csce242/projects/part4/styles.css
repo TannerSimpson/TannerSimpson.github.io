@@ -1,0 +1,84 @@
+:root {
+    --square-top: 0px;
+    --background-color: rgb(64, 104, 196);
+    --primary-color: #fff;
+    --secondary-color: #dfd3c3;
+    --third-color: white;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--background-color);
+    color: var(--primary-color);
+}
+
+.centered {
+    margin: 0;
+}
+
+.toggle-bar {
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--secondary-color);
+    padding: 10px;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: var(--third-color);
+}
+
+.image-section {
+    width: 45%;
+    margin-bottom: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text-section {
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: var(--secondary-color);
+}
+
+@media only screen and (min-width: 1000px) {
+    .main-nav ul {
+        flex-direction: row;
+        justify-content: center;
+    }
+    #main-nav li {
+        display: inline-block;
+    }
+    .hide-small {
+        display: block;
+    }
+    #button-home,
+#button-notesSimple,
+#button-notesSimplePlus,
+#button-account,
+#button-more {
+     font-size: 20px;
+}
+}
