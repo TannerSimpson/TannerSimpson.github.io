@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <title>If Statements</title>
+</head>
+<body>
+    <header>
+        <h1>Assignment 8</h1>
+    </header>
+
+    <header class="sub-header">
+        <h2>If Statements</h2>
+    </header>
+
+    <header class="sub-header">
+        <button onclick="showExercise(1)">Exercise 1</button>
+        <button onclick="showExercise(2)">Exercise 2</button>
+    </header>
+
+    <div class="container">
+        <div class="exercise-menu">
+            <p>Exercise 1 | Exercise 2</p>
+        </div>
+
+        <div class="exercise-content" id="exercise1" style="display: flex;">
+            <h3>Exercise 1: Enter Command</h3>
+                <ul id="command-list-exercise1">
+                    <li><strong>b:</strong> Read a book</li>
+                    <li><strong>c:</strong> Act like a clown</li>
+                    <li><strong>p:</strong> Have a birthday party</li>
+                    <li><strong>r:</strong> Walk in the rain</li>
+                    <li><strong>s:</strong> Shovel up some dirt</li>
+                    <li><strong>w:</strong> Go to work</li>
+                </ul>
+            <label for="command-input">Enter Command:</label>
+            <input type="text" id="command-input" oninput="handleCommand()">
+            <div id="exercise1-images">
+                <img src="images/original.jpg" alt="Original Image">
+            </div>
+            <p>Image by <a href="https://www.freepik.com/free-vector/hand-drawn-stickman-collection_20856908.htm#query=stick%20figure&position=1&from_view=keyword&track=ais&uuid=12d17ea3-cffc-4386-9be4-ff9dc4b5edc2">Freepik</a></p>
+        
+        
+        </div>
+
+        <div class="exercise-content" id="exercise2">
+            <h3>Exercise 2: Yoga Slider</h3>
+            <input type="range" min="1" max="8" value="1" id="slider" onchange="handleSlider()">
+            <div id="exercise2-images">
+                <img src="images/yoga1.jpg" alt="Yoga 1">
+            </div>
+            <p>Image by <a href="https://www.freepik.com/free-vector/hand-drawn-stickman-collection_20832062.htm#query=stick%20figure%20run&position=46&from_view=search&track=ais&uuid=22e87991-ee06-4dc2-8ea3-464d535e1a63">Freepik</a></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+<footer>
+    @TannerSimpson.github.io
+</footer>
+</html>
