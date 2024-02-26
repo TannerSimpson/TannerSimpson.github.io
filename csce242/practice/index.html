@@ -2,32 +2,87 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="styles.css">
+    <title>NotesSimple</title>
 </head>
+<body>
+    <header>
+        <h1 class="title">NotesSimple</h1>
+        <div class="account-section">
+            <img src="images/login.jpeg" width="35px" height="35px" alt="Account Image">
+            <a href="account.html" class="account-button">Account</a>
+        </div>
+    </header>
 
-    <body>
-        <header>
-            <h1>CSCE 242: Website Applications</h1>
-	        <h2 id="name">Tanner Simpson</h2>
-            <h1>Assignmsssents</h1>
-        </header>
+    <nav class="toggle-bar">
+        <a href="contact.html"><button>Contact Us</button></a>
+        <a href="reviews.html"><button>Reviews</button></a>
+    </nav>
 
-        <section class="assignments">
-            <div class="column">
-                <h3><a href="https://TannerSimpson.github.io/csce242/assignments/assignment1/index.html">Assignment 1:Basic HTML</a></h3>
-                <a href="https://TannerSimpson.github.io/csce242/assignments/assignment1/index.html"><img src="#" width="300px" height="200px"></a>
-                <p>The goal of this assignment was to create a website of a classroom appropriate topic.</p>
+    <div class="parallax home"><h3>Welcome to NotesSimple</h3></div>
+    <section class="content">
+        <div class="image-section">
+            <img src="images/Logo.png" width="300px" height="100px" alt="Left Image">
+            <div class="text-section">
+                <h2>What is NotesSimple?</h2>
+                <p>NotesSimple is an innovative new app that allows students to actively record their lectures and automatically translate them to notes...</p>
             </div>
-            <div class="column">
-                <h3><a href="https://TannerSimpson.github.io/csce242/assignments/assignment2/index.html">Assignment 2:Basic CSS</a></h3>
-                <a href="https://TannerSimpson.github.io/csce242/assignments/assignment2/index.html"><img src="#" width="300px" height="200px"></a>
-                <p>This goal of this assignment was to create a new website that utilizies more features of html and css.</p>
-            </div>
-            <div class="column">
-                <h3><a href="#">Assignment 3:Page Layout</a></h3>
-                <a href="#"><img src="#" width="300px" height="200px"></a>
-                <p>The goal of assignment was to use flexbox and media query to recreate the given page template.</p>
-            </div>
-        </section>
-    </body>
+        </div>
 
+        <div class="image-section">
+            <div class="text-section">
+                <h2>How to use NotesSimple?</h2>
+                <p>First, visit our download page to install the software onto your computer or mobile device. Once you have the application installed...</p>
+            </div>
+            <img src="images/Logo.png" width="300px" height="200px" alt="Right Image">
+        </div>
+    </section>
+
+    <section class="parallax face">
+        <h3>NotesSimple</h3>
+        <h3><a class="down-arrow" href="#">&#8675;</a></h3>
+    </section>
+
+    <section class="recording-section">
+        <button id="startRecordingBtn">Begin Recording</button>
+        <input type="text" id="infoTextBox" placeholder="Press the button to reveal information" readonly>
+        <p id="Lecture is now being recorded. "></p>
+    </section>
+
+    <section class="action-buttons">
+        <button id="saveTextFileBtn">Save Text File</button>
+        <button id="createNotesBtn">Create Notes</button>
+        <button id="saveVoiceRecordingBtn">Save Voice Recording</button>
+        <button id="highlightKeyPointsBtn">Highlight Key Points</button>
+        <textarea id="notesTextArea" placeholder="Notes will be displayed here. " readonly></textarea>
+    </section>
+
+    <section class="parallax leash">
+        <h3>NotesSimple+</h3>
+        <h3><a class="down-arrow" href="#">&#8675;</a></h3>
+    </section>
+
+    <section class="two-column-layout">
+        <div class="left-column">
+            <img src="images/login.jpeg" width="200" height="200" alt="Left Image">
+            <h2>Login to your account:</h2>
+            <label for="username">Username:</label>
+            <input type="text" id="username" placeholder="Enter your username">
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" placeholder="Enter your password">
+        </div>
+
+        <div class="right-column">
+            <img src="images/plus.webp" width="300" height="400" alt="Right Image">
+            <h2>Benefits of NotesSimple+</h2>
+            <div id="list">
+                <li>Access to new features.</li>
+                <li>Unlimited amount of recordings.</li>
+                <li>New AI Generative technology.</li>
+                <li>Access to publicly posted notes.</li>
+                <li>Only $4.99 per month.</li>
+            </div>
+        </div>
+    </section>
+</body>
 </html>

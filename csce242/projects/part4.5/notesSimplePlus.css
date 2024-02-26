@@ -1,9 +1,9 @@
 :root {
     --square-top: 0px;
-    --background-color: rgb(64, 104, 196);
-    --primary-color: #fff;
-    --secondary-color: #dfd3c3;
-    --third-color: white;
+    --background-color: #4654be;
+    --primary-color: #a6b1e1;
+    --secondary-color: #ffffff;
+    --third-color: #ffffffb8;
 }
 
 body {
