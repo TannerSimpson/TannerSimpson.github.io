@@ -1,9 +1,10 @@
 :root {
     --square-top: 0px;
     --background-color: #4654be;
-    --primary-color: #a6b1e1;
+    --primary-color: #DAA520;
     --secondary-color: #ffffff;
     --third-color: #ffffffb8;
+    --gray-color: rgb(63, 93, 146);
 }
 
 body,
@@ -20,11 +21,13 @@ body {
     font-family: Arial, sans-serif;
 }
 
+h1 {
+    color: var(--primary-color);
+}
+
 header {
-    /*text-align: center;
-    padding: 20px;*/
-    background-color: var(--background-color);
-    color: var(--third-color);
+    background-color: var(--gray-color);
+    color: var(--secondary-color);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -32,7 +35,7 @@ header {
 }
 
 .title {
-    margin: 0;
+    margin: 10px;
     text-align: center;
 }
 
@@ -45,10 +48,15 @@ header {
     margin-left: 10px;
     padding: 8px 12px;
     text-decoration: none;
-    background-color: #3498db;
-    color: #fff;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
     border: none;
     border-radius: 5px;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
 }
 
 img {
@@ -74,6 +82,23 @@ button {
     padding: 10px;
     border: none;
     cursor: pointer;
+    text-decoration: none;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: none;
+    border-radius: 5px;
+}
+
+#menu {
+    width: 700px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: none;
+    border-radius: 5px;
 }
 
 .content {
@@ -103,6 +128,12 @@ img {
     background-color: var(--secondary-color);
 }
 
+.secondtext-section {
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: var(--secondary-color);
+}
+
 .parallax {
     height: 100%;
     opacity: 0.65;
@@ -118,7 +149,7 @@ img {
 }
 
 .face {
-    background-image: url("images/notes.jpeg");
+    background-image: url("images/background1.jpeg");
 }
 
 .leash {
@@ -127,7 +158,7 @@ img {
 
 .parallax h1 {
     text-align: center;
-    color: white;
+    color: var(--primary-color);
     margin: 0;
     padding: 0;
     position: relative;
@@ -137,7 +168,7 @@ img {
 
 .parallax h3 {
     text-align: center;
-    color: white;
+    color: var(--primary-color);
     margin: 0;
     padding: 0;
     position: relative;
@@ -147,13 +178,51 @@ img {
 
 .down-arrow {
     text-decoration: none;
-    color: white;
+    color: var(--primary-color);
     font-size: 3em;
 }
 
 img {
     max-width: 90%;
     max-height: 90%;
+}
+
+.image-grid {
+    display: flex;
+    background-color: var(--gray-color);
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.column {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: var(--gray-color);
+    text-decoration: none;
+}
+
+.image-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+h4 {
+    text-decoration: none;
+    color: var(--primary-color);
 }
 
 @media only screen and (min-width: 1000px) {
@@ -168,10 +237,9 @@ img {
         display: block;
     }
     #button-home,
-#button-notesSimple,
-#button-notesSimplePlus,
 #button-account,
-#button-more {
+#button-contact-us
+#button-reviews {
      font-size: 20px;
 }
 }
