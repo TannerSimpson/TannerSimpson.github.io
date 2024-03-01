@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <title>Assignment 11 - Trees Information</title>
+</head>
+<body>
+
+    <header>
+        <h1>Assignment 11</h1>
+        <h2>Classes</h2>
+    </header>
+
+    <main id="treeContainer">
+        <div class="tree-box" onclick="showTreeInfo(0)">
+            <img src="images/Bald_Cypress.jpeg" alt="Bald Cypress">
+            <h3>Bald Cypress</h3>
+        </div>
+        <div class="tree-box" onclick="showTreeInfo(1)">
+            <img src="images/Eastern_Redbud.jpeg" alt="Eastern Redbud">
+            <h3>Eastern Redbud</h3>
+        </div>
+        <div class="tree-box" onclick="showTreeInfo(2)">
+            <img src="images/Loblolly_Pine.jpeg" alt="Loblolly Pine">
+            <h3>Loblolly Pine</h3>
+        </div>
+        <div class="tree-box" onclick="showTreeInfo(3)">
+            <img src="images/Southern_Magnolia.jpeg" alt="Southern Magnolia">
+            <h3>Southern Magnolia</h3>
+        </div>
+    </main>
+
+    <footer>
+        @tannersimpson.com
+    </footer>
+
+    <!-- Modal Dialog -->
+    <div id="treeModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div id="treeModalContent"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
