@@ -10,25 +10,6 @@ class Tree {
         this.description = description;
     }
 
-    getSection() {
-        return `<div class="tree-box" onclick="showTreeInfo(${trees.indexOf(this)})">
-                    <img src="images/${this.imgFileName}" alt="${this.title}">
-                    <h3>${this.title}</h3>
-                </div>`;
-    }
-
-    getExpandedSection() {
-        return `<div class="tree-box">
-                    <img src="images/${this.imgFileName}" alt="${this.title}" style="float:right; width:50%;">
-                    <h2>${this.title}</h2>
-                    <p><strong>Type:</strong> ${this.type}</p>
-                    <p><strong>Growth Rate:</strong> ${this.growthRate}</p>
-                    <p><strong>Height:</strong> ${this.height}</p>
-                    <p><strong>Lifespan:</strong> ${this.lifespan}</p>
-                    <p><strong>Habitat:</strong> ${this.habitat}</p>
-                    <p>${this.description}</p>
-                </div>`;
-    }
 }
 
 const trees = [
@@ -40,27 +21,28 @@ const trees = [
 
 function addTreesToDOM() {
     const mainElement = document.getElementById('treeContainer');
-    trees.forEach((tree, index) => {
+    trees.forEach((tree) => {
         const treeBox = document.createElement('div');
-        treeBox.classList.add('tree-box');
-        treeBox.onclick = () => showTreeInfo(index);
-
-        const treeImage = document.createElement('img');
-        treeImage.src = `images/${tree.imgFileName}`;
-        treeImage.alt = tree.title;
-
-        const treeTitle = document.createElement('h3');
-        treeTitle.textContent = tree.title;
-
-        treeBox.appendChild(treeImage);
-        treeBox.appendChild(treeTitle);
-
+        treeBox.innerHTML = tree.getSection();
         mainElement.appendChild(treeBox);
     });
 }
 
 function showTreeInfo(index) {
-    document.getElementById('treeModalContent').innerHTML = trees[index].getExpandedSection();
+    const modalContent = document.getElementById('modalContent');
+    const tree = trees[index];
+    modalContent.innerHTML = `<div class="tree-info-box">
+                                <img src="images/${tree.imgFileName}" alt="${tree.title}" style="float:right; width:50%;">
+                                <div class="tree-info">
+                                    <h2>${tree.title}</h2>
+                                    <p><strong>Type:</strong> ${tree.type}</p>
+                                    <p><strong>Growth Rate:</strong> ${tree.growthRate}</p>
+                                    <p><strong>Height:</strong> ${tree.height}</p>
+                                    <p><strong>Lifespan:</strong> ${tree.lifespan}</p>
+                                    <p><strong>Habitat:</strong> ${tree.habitat}</p>
+                                    <p>${tree.description}</p>
+                                </div>
+                             </div>`;
     document.getElementById('treeModal').style.display = 'flex';
 }
 

@@ -1,21 +1,21 @@
 :root {
-    --main-bg-color: #f4f4f4;
-    --main-text-color: #333;
-    --header-bg-color: #4682b4;
-    --header-text-color: #fff;
+    --bg-color: #42b883;
+    --header-color: #347474;
+    --box-color: #35495e;
+    --text-color: #ff7e67;
 }
 
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: var(--main-bg-color);
-    color: var(--main-text-color);
+    background-color: var(--bg-color);
+    color: var(--text-color);
 }
 
 header {
-    background-color: var(--header-bg-color);
-    color: var(--header-text-color);
+    background-color: var(--bg-color);
+    color: var(--text-color);
     text-align: center;
     padding: 1em 0;
 }
@@ -29,8 +29,11 @@ main {
 .tree-box {
     width: 200px;
     margin: 10px;
+    padding: 30px;
+    border-radius: 10px;
     text-align: center;
     cursor: pointer;
+    background-color: var(--box-color);
 }
 
 .tree-box img {
@@ -41,19 +44,20 @@ main {
 footer {
     text-align: center;
     padding: 1em 0;
-    background-color: var(--header-bg-color);
-    color: var(--header-text-color);
+    background-color: var(--bg-color);
+    color: var(--text-color);
 }
 
 /* Modal Styles */
 .modal {
     display: none;
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,0.7);
+    top: 30%;
+    left: 30%;
+    width: 40%;
+    height: 40%;
+    color:black;
+    background-color: white;
     justify-content: center;
     align-items: center;
 }
