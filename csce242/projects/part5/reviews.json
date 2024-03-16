@@ -1,0 +1,99 @@
+[
+    {
+        "_id": 1,
+        "img_name": "profile1.webp",
+        "review": "Used this product for all of my classes and loved it!",
+        "rating": 5,
+        "name": "John Doe",
+        "age": 30,
+        "occupation": "Teacher",
+        "location": "New York",
+        "date": "2023-05-10",
+        "relevant_info": ["Easy to use", "Great features", "Helped improve grades"]
+    },
+    {
+        "_id": 2,
+        "img_name": "profile2.webp",
+        "review": "Wouldn't have passed my Web Applications class without NotesSimple.",
+        "rating": 4,
+        "name": "Jane Smith",
+        "age": 25,
+        "occupation": "Student",
+        "location": "Los Angeles",
+        "date": "2023-06-20",
+        "relevant_info": ["Intuitive interface", "Responsive support team", "Seamless integration"]
+    },
+    {
+        "_id": 3,
+        "img_name": "profile2.webp",
+        "review": "Wouldn't have passed my Web Applications class without NotesSimple.",
+        "rating": 4,
+        "name": "Jane Smith",
+        "age": 25,
+        "occupation": "Student",
+        "location": "Los Angeles",
+        "date": "2023-06-20",
+        "relevant_info": ["Intuitive interface", "Responsive support team", "Seamless integration"]
+    },
+    {
+        "_id": 4,
+        "img_name": "profile2.webp",
+        "review": "Wouldn't have passed my Web Applications class without NotesSimple.",
+        "rating": 4,
+        "name": "Jane Smith",
+        "age": 25,
+        "occupation": "Student",
+        "location": "Los Angeles",
+        "date": "2023-06-20",
+        "relevant_info": ["Intuitive interface", "Responsive support team", "Seamless integration"]
+    },
+    {
+        "_id": 5,
+        "img_name": "profile2.webp",
+        "review": "Wouldn't have passed my Web Applications class without NotesSimple.",
+        "rating": 4,
+        "name": "Jane Smith",
+        "age": 25,
+        "occupation": "Student",
+        "location": "Los Angeles",
+        "date": "2023-06-20",
+        "relevant_info": ["Intuitive interface", "Responsive support team", "Seamless integration"]
+    },
+    {
+        "_id": 6,
+        "img_name": "profile2.webp",
+        "review": "Wouldn't have passed my Web Applications class without NotesSimple.",
+        "rating": 4,
+        "name": "Jane Smith",
+        "age": 25,
+        "occupation": "Student",
+        "location": "Los Angeles",
+        "date": "2023-06-20",
+        "relevant_info": ["Intuitive interface", "Responsive support team", "Seamless integration"]
+    },
+    {
+        "_id": 7,
+        "img_name": "profile2.webp",
+        "review": "Wouldn't have passed my Web Applications class without NotesSimple.",
+        "rating": 4,
+        "name": "Jane Smith",
+        "age": 25,
+        "occupation": "Student",
+        "location": "Los Angeles",
+        "date": "2023-06-20",
+        "relevant_info": ["Intuitive interface", "Responsive support team", "Seamless integration"]
+    },
+    {
+        "_id": 8,
+        "img_name": "profile2.webp",
+        "review": "Wouldn't have passed my Web Applications class without NotesSimple.",
+        "rating": 4,
+        "name": "Jane Smith",
+        "age": 25,
+        "occupation": "Student",
+        "location": "Los Angeles",
+        "date": "2023-06-20",
+        "relevant_info": ["Intuitive interface", "Responsive support team", "Seamless integration"]
+    }
+    
+]
