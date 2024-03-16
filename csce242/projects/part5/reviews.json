@@ -45,7 +45,7 @@
         "occupation": "Student",
         "location": "Virginia",
         "date": "2021-08-08",
-        "relevant_info": ["Rich text editing, integration with cloud services, powerful search functionality."]
+        "relevant_info": ["Rich text editing", "integration with cloud services", "powerful search functionality."]
     },
     {
         "_id": 5,
@@ -57,7 +57,7 @@
         "occupation": "Finance",
         "location": "Nevada",
         "date": "2023-05-13",
-        "relevant_info": ["Collaboration features, reminders and notifications, reliable offline access."]
+        "relevant_info": ["Collaboration features", "reminders and notifications", "reliable offline access."]
     },
     {
         "_id": 6,
@@ -69,7 +69,7 @@
         "occupation": "Student",
         "location": "California",
         "date": "2023-12-20",
-        "relevant_info": ["Cross-platform support, robust security features, customizable themes and layouts."]
+        "relevant_info": ["Cross-platform support", "robust security features", "customizable themes and layouts."]
     },
     {
         "_id": 7,
@@ -81,7 +81,7 @@
         "occupation": "Software Developer",
         "location": "D.C.",
         "date": "2023-04-23",
-        "relevant_info": ["Integration with productivity tools, backup and version history, regular updates and improvements."]
+        "relevant_info": ["Integration with productivity tools", "backup and version history", "regular updates and improvements."]
     },
     {
         "_id": 8,
@@ -93,7 +93,7 @@
         "occupation": "Entreprenuer",
         "location": "New york",
         "date": "2022-07-20",
-        "relevant_info": ["Sleek design, seamless cloud integration, intuitive search functionality."]
+        "relevant_info": ["Sleek design", "seamless cloud integration", "intuitive search functionality."]
     }
     
 ]
