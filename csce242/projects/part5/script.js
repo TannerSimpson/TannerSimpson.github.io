@@ -38,7 +38,7 @@ class Review {
             <p><strong>Occupation:</strong> ${this.occupation}</p>
             <p><strong>Location:</strong> ${this.location}</p>
             <p><strong>Date:</strong> ${this.date}</p>
-            <p><strong>Comments:</strong></p>
+            <p><strong>Comments</strong></p>
             <ul>
                 ${this.comments.map(info => `<li>${info}</li>`).join('')}
             </ul>
