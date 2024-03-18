@@ -9,7 +9,7 @@ class Review {
         this.occupation = data.occupation;
         this.location = data.location;
         this.date = data.date;
-        this.relevant_info = data.relevant_info;
+        this.comments = data.comments;
     }
 
     getImage() {
@@ -38,9 +38,9 @@ class Review {
             <p><strong>Occupation:</strong> ${this.occupation}</p>
             <p><strong>Location:</strong> ${this.location}</p>
             <p><strong>Date:</strong> ${this.date}</p>
-            <p><strong>Relevant Information:</strong></p>
+            <p><strong>Comments::</strong></p>
             <ul>
-                ${this.relevant_info.map(info => `<li>${info}</li>`).join('')}
+                ${this.comments.map(info => `<li>${info}</li>`).join('')}
             </ul>
         `;
 
